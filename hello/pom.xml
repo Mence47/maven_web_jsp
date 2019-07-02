@@ -9,10 +9,6 @@
   <version>1</version>
   <packaging>war</packaging>
 
-  <name>hello Maven Webapp</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
-
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
@@ -26,21 +22,7 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
-
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>servlet-api</artifactId>
-      <version>2.5</version>
-      <scope>provided</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>javax.servlet.jsp</groupId>
-      <artifactId>jsp-api</artifactId>
-      <version>2.1</version>
-      <scope>provided</scope>
-    </dependency>
-  </dependencies>
+    </dependencies>
 
   <build>
     <finalName>hello</finalName>
@@ -83,25 +65,12 @@
           <version>2.2</version>
           <configuration>
             <url>http://localhost:8080/manager/text</url>
-            <server>TomcatServer</server>
-            <username>batlukov</username>
+            <username>batlukov</username> 
             <password>11347</password>
             <path>/myfirstapp</path>
-            <update>true</update>
+            <update>true</update> 
+            
           </configuration>
-        </plugin>
-
-       <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>jspc-maven-plugin</artifactId>
-            <executions>
-                <execution>
-                    <id>jspc</id>
-                    <goals>
-                        <goal>compile</goal>
-                    </goals>
-                </execution>
-            </executions>
         </plugin>
 
       </plugins>
